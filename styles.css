@@ -1,0 +1,80 @@
+/* Base styles */
+body {
+  margin: 0;
+  font-family: 'Helvetica Neue', sans-serif;
+  background: #0d0d0d url('background.jpg') no-repeat center center fixed;
+  background-size: cover;
+  color: white;
+}
+
+.title {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-top: 2rem;
+  color: #ff1a1a;
+  font-weight: bold;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.carousel-container {
+  max-width: 800px;
+  margin: 3rem auto;
+  position: relative;
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.7);
+  border: 2px solid #ff1a1a;
+  border-radius: 10px;
+  box-shadow: 0 0 20px #ff1a1a44;
+}
+
+.carousel {
+  position: relative;
+  overflow: hidden;
+}
+
+.carousel-track {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.carousel-img {
+  min-width: 100%;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+/* Buttons */
+.nav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(255, 26, 26, 0.8);
+  border: none;
+  padding: 12px;
+  color: white;
+  font-size: 2rem;
+  cursor: pointer;
+  z-index: 10;
+  border-radius: 50%;
+  transition: background 0.3s;
+}
+
+.nav:hover {
+  background: #ff1a1a;
+}
+
+.prev {
+  left: 10px;
+}
+
+.next {
+  right: 10px;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .title {
+    font-size: 1.8rem;
+  }
+}
